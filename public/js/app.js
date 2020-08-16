@@ -1,5 +1,3 @@
-console.log('Client side javascript file is loaded')
-
 //fetch przechwytuje dane z API, jak przechwyci to uzywamy then((response))
 //=>zeby to response, czyli odpowiedz w formie json nastepnie przekazac do innej funkcji
 //ktora zrobi parse na ten json czyli zamieni go w js i bedzie mozna uzywac
