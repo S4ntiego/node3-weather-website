@@ -35,6 +35,8 @@ weatherForm.addEventListener('submit', (e) => {
     
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
+//normalnie uzywamy http://localhost:3000/weather?address= ale ze wzgledu na wymagania
+//Haroku musimy uzywac jedynie koncowki danej strony ktora nas interesuje
 
     fetch('/weather?address=' + search.value).then((response) => {
     response.json().then((data) => {
