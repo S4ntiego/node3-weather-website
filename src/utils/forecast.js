@@ -9,7 +9,8 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.success === false){ 
             callback('Sorry, but your API request failed, try again', undefined)
         } else {
-            callback(undefined, body.current.temperature + ' ' + body.location.timezone_id)
+            callback(undefined,
+                     'Weather is ' + body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + ' degrees out.')
     }
     })
 }
